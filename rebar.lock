@@ -1,6 +1,6 @@
 {"1.1.0",
 [{<<"katja">>,
-  {git,"git@github.com:nifoc/katja.git",
+  {git,"git://github.com/nifoc/katja.git",
        {ref,"1b5cd728a30e9ae60fd92da78374fd3d70a5a02c"}},
   0},
  {<<"meck">>,
