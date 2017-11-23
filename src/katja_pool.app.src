@@ -12,7 +12,7 @@
  , {modules, []}
  , {maintainers, ["Hakan Nilsson"]}
  , {licenses, ["MIT"]}
- , {links, [{"Github", "https://github.com/plux/kajta_pool"}]}
+ , {links, [{"Github", "https://github.com/plux/katja_pool"}]}
  , {env,
     [ {pools,
        [ {katja_writer_pool, [ {size, 10}
