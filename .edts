@@ -1,0 +1,2 @@
+:name "edts_katja_pool"
+:lib-dirs '("_build/default/lib")

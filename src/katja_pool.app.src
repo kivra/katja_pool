@@ -1,0 +1,37 @@
+{application, katja_pool,
+ [ {description, "Simple poolboy wrapper around katja"}
+ , {vsn, "0.1.0"}
+ , {registered, []}
+ , {mod, {katja_pool_app, []}}
+ , {applications,
+    [ kernel
+    , stdlib
+    , poolboy
+    , katja
+    ]}
+ , {modules, []}
+ , {maintainers, ["Hakan Nilsson"]}
+ , {licenses, ["MIT"]}
+ , {links, [{"Github", "https://github.com/plux/kajta_pool"}]}
+ , {env,
+    [ {pools,
+       [ {katja_writer_pool, [ {size, 10}
+                             , {max_overflow, 20}
+                             , {strategy, fifo}
+                             , {worker_module, katja_writer}
+                             ], []}
+       , {katja_reader_pool, [ {size, 10}
+                             , {max_overflow, 20}
+                             , {strategy, fifo}
+                             , {worker_module, katja_reader}
+                             ], []}
+       ]}
+    , {katja,
+       [ {host, "127.0.0.1"}
+       , {port, 5555}
+       , {transport, detect}
+       , {pool, [katja_writer, katja_reader]}
+       , {defaults, []}
+       ]}
+    ]}
+ ]}.

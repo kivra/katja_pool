@@ -1,0 +1,18 @@
+{"1.1.0",
+[{<<"katja">>,
+  {git,"git@github.com:nifoc/katja.git",
+       {ref,"1b5cd728a30e9ae60fd92da78374fd3d70a5a02c"}},
+  0},
+ {<<"meck">>,
+  {git,"git://github.com/basho/meck.git",
+       {ref,"dde759050eff19a1a80fd854d7375174b191665d"}},
+  2},
+ {<<"poolboy">>,{pkg,<<"poolboy">>,<<"1.5.1">>},0},
+ {<<"protobuffs">>,
+  {git,"git://github.com/basho/erlang_protobuffs",
+       {ref,"a1eeee77aef639a33cc5a2dd7abed7e4f4b83f9b"}},
+  1}]}.
+[
+{pkg_hash,[
+ {<<"poolboy">>, <<"6B46163901CFD0A1B43D692657ED9D7E599853B3B21B95AE5AE0A777CF9B6CA8">>}]}
+].

@@ -1,0 +1,7 @@
+language: erlang
+otp_release:
+  - 20.1
+  - 19.3
+  - 18.3
+  - 17.5
+script: "./rebar3 dialyzer"

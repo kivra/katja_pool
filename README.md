@@ -1,2 +1,9 @@
-# katja_pool
-Simple poolboy wrapper around katja
+katja_pool
+=====
+
+A simple poolboy wrapper around katja
+
+Build
+-----
+
+    $ rebar3 compile
